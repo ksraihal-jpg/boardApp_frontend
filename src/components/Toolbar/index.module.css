@@ -1,0 +1,18 @@
+.container {
+  @apply absolute left-1/2 top-5 px-4 py-2 flex rounded-full border border-gray-200 bg-white/80;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.toolItem {
+  @apply flex justify-center items-center text-xl p-3 text-gray-600 mr-3 last:mr-0 cursor-pointer transition-colors duration-150 rounded-full;
+}
+
+.toolItem:hover {
+  @apply bg-indigo-50 text-indigo-700;
+}
+
+.toolItem.active {
+  @apply bg-indigo-500 text-white;
+}
