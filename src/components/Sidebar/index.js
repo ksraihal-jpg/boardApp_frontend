@@ -285,6 +285,7 @@ const Sidebar = ({ isOpen }) => {
     if (isUserLoggedIn) {
       fetchCanvases();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run only when isUserLoggedIn changes
   }, [isUserLoggedIn]);
 
   // ==================== Render ====================

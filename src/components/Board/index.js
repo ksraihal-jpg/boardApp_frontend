@@ -147,6 +147,7 @@ function Board({ id }) {
       socket.off("unauthorized");
       socket.off("connect");
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run only when id changes; setters are stable
   }, [id]);
 
   // Keep ref in sync with current canvas and elements (so we can save correct state when switching)
@@ -216,6 +217,7 @@ function Board({ id }) {
     };
 
     loadCanvasFromAPI();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run only when id changes; setters are stable
   }, [id]);
 
   // ==================== Canvas Setup ====================
