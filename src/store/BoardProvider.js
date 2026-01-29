@@ -1,13 +1,10 @@
-import React, { useCallback, useReducer, useEffect } from "react";
+import React, { useCallback, useReducer } from "react";
 import boardContext from "./board-context";
 import { BOARD_ACTIONS, TOOL_ACTION_TYPES, TOOL_ITEMS } from "../constants";
 import {
   createElement,
   isPointNearElement,
 } from "../utils/element";
-import { updateCanvas, fetchInitialCanvasElements } from "../utils/api";
-
-const canvasId = "67a66a7c2475972d34655e4d";
 
 const boardReducer = (state, action) => {
   switch (action.type) {

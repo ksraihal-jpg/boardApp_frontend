@@ -8,9 +8,8 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-  const { isUserLoggedIn,setUserLoginStatus } = useContext(boardContext);
+  const { setUserLoginStatus } = useContext(boardContext);
 
-  console.log(isUserLoggedIn);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

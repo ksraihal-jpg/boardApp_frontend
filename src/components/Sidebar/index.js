@@ -24,8 +24,6 @@ const Sidebar = ({ isOpen }) => {
   const { 
     canvasId, 
     setCanvasId, 
-    setElements, 
-    setHistory, 
     isUserLoggedIn, 
     setUserLoginStatus 
   } = useContext(boardContext);
